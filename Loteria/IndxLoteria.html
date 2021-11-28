@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Loteria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Estilo.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <div style="border: solid 1px;">
+        <h1 class="header">Simulador de la Lotería de Navidad</h1>
+        <hr/>
+        <div style="border: solid 1px; width: 320px; height: 240px; position: relative; float: left;">
+            <h2 class="blanco">Primer premio:</h2>
+            <h1 style="top: 65px; left: 102px;" id="Gordo" class="Numero"></h1>
+            <img src="decimo.jpg">
+        </div>
+
+        <div style="border: solid 1px; width: 320px; height: 240px; position: relative; float: left;">
+            <h2 class="blanco">Segundo premio:</h2>
+            <h1 style="top: 67px; left: 90px; font-size: 26px; letter-spacing: 9px" id="SegundoPremio" class="Numero"></h1>
+            <img style="width: 250px" src="decimo.jpg">
+        </div>
+
+        <div style="border: solid 1px; height: 240px; width: 320px; position: relative; float: left;">
+            <h2 class="blanco">Tercer premio:</h2>
+            <h1 style="top: 67px; left: 90px; font-size: 26px; letter-spacing: 9px" id="TercerPremio" class="Numero"></h1>
+            <img style="width: 250px" src="decimo.jpg">
+        </div>
+
+        <hr/>
+
+        <div style="border: solid 1px; height: 195px; width: 640px; position: relative; float: left;">
+            <h2 class="blanco">Cuartos premios:</h2>
+            <h1 style="top: 68px; left: 82px; font-size: 24px; letter-spacing: 8px" class="Numero" id="CuartoPremio1"></h1>
+            <h1 style="top: 68px; left: 315px; font-size: 24px; letter-spacing: 8px" class="Numero" id="CuartoPremio2"></h1>
+            <img style="width: 230px" src="decimo.jpg">a
+            <img style="width: 230px" src="decimo.jpg">a
+        </div>
+
+        <hr style="position: relative; top: 8px"/>
+
+        <div style="border: solid 1px; height: 300px; width: 1000px; position: relative; float: left;">
+            <h2 class="blanco">Quintos premios:</h2>
+            <h1 style="top: 66px; left: 65px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio1"></h1>
+            <h1 style="top: 66px; left: 267px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio2"></h1>
+            <h1 style="top: 66px; left: 469px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio3"></h1>
+            <h1 style="top: 66px; left: 669px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio4"></h1>
+            <h1 style="top: 66px; left: 869px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio5"></h1>
+            <h1 style="top: 174px; left: 65px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio6"></h1>
+            <h1 style="top: 174px; left: 268px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio7"></h1>
+            <h1 style="top: 174px; left: 468px; font-size: 21px; letter-spacing: 7px" class="Numero" id="QuintoPremio8"></h1>
+
+            <img style="width: 190px" src="decimo.jpg">a
+            <img style="width: 190px" src="decimo.jpg">a
+            <img style="width: 190px" src="decimo.jpg">a
+            <img style="width: 190px" src="decimo.jpg">a
+            <img style="width: 190px" src="decimo.jpg">
+            <img style="width: 190px" src="decimo.jpg">a
+            <img style="width: 190px" src="decimo.jpg">a
+            <img style="width: 190px" src="decimo.jpg">
+        </div>
+    </div>
+    <table class="tablaFlotante">
+        <tr>
+            <td class="blanco">Premios mayores:</td><td><div style="width: 20px; color:red; background-color: red;">a</div></td>
+        </tr>
+        <tr>
+            <td class="blanco">Pedrea (5 cifras):</td><td><div style="width: 20px; color:yellow; background-color: yellow;">a</div></td>
+        </tr>
+        <tr>
+            <td class="blanco">Aproximaciones (1-2-3):</td><td><div style="width: 20px; color:green; background-color: green;">a</div></td>
+        </tr>
+        <tr>
+            <td class="blanco">Centenas (1-2-3-4):</td><td><div style="width: 20px; color:orange; background-color: orange;">a</div></td>
+        </tr>
+        <tr>
+            <td class="blanco">Decenas (1-2-3):</td><td><div style="width: 20px; color:blue; background-color: blue;">a</div></td>
+        </tr>
+        <tr>
+            <td class="blanco">Reintegro:</td><td><div style="width: 20px; color:white; background-color: white;">a</div></td>
+        </tr>
+    </table>
+
+    <hr style="position: relative; top: 8px"/>
+    <h2 class="blanco">Gráfico:</h2>
+
+    <button id="disparador">Mostrar Bruto</button><br>
+    <div id="salidaBruto" style="border: solid 1px; position: relative; float: left;"></div>
+    <br><br><br><br>
+</body>
+</html>

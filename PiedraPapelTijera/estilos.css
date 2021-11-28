@@ -1,0 +1,68 @@
+#contenedorPrincipal{
+    /* border: solid 1px black; */
+    width: 850px;
+    height: 800px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    
+}
+h1{
+    background-color: #f8ce44;
+    font-size: 40px;
+}
+div.linea{
+    width: 5px;
+    height: 325px;
+    background-color: black;
+    margin: auto;
+}
+#marcadorJugador{
+    /* border: solid black 1px; */
+    top: 120px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+}
+#marcadorMaquina{
+    /* border: solid black 1px; */
+    top: 120px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+}
+#nombreJugador, #nombreMaquina{
+    background-color: #5798fa;
+    color: white;
+}
+h3~table{
+    margin: auto;
+}
+img{
+    /* border: solid black 3px; */
+    width: 130px;
+    padding: 10px;
+}
+#eleccionJugador{
+    position: absolute;
+    left: 180px;
+    top: 180px;
+}
+#eleccionMaquina{
+    position: absolute;
+    right: 180px;
+    top: 180px;
+}
+#botonera img{
+    border: solid 6px black;
+    transition: 0.4s;
+}
+#botonera img:hover{
+    background-color:#81B1F8;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 5px;
+    width: 140px;
+}

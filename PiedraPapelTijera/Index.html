@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piedra, Papel o Tijeras</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="js/objetos.js"></script>
+        <script src="js/funciones.js"></script>
+    </head>
+    <body>
+        <div id="contenedorPrincipal">
+            <h1>Piedra, Papel o Tijera</h1>
+            <h2>Ronda <span id="numPartidas"></span></h2>
+
+            <div id="marcadorJugador">
+                <h3 id="nombreJugador">Jugador1</h3>
+                <table>
+                    <tr>
+                        <td>Victorias:</td>
+                        <td id="victoriasJugador"></td>
+                    </tr>
+                    <tr>
+                        <td>Derrotas:</td>
+                        <td id="derrotasJugador"></td>
+                    </tr>
+                    <tr>
+                        <td>Empates:</td>
+                        <td id="empatesJugador"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <img id="eleccionJugador" src="img/blanco.png">
+            <img id="eleccionMaquina" src="img/blanco.png">
+
+            <div class="linea"></div>
+
+            <div id="marcadorMaquina">
+                <h3 id="nombreMaquina">Maquina</h3>
+                <table>
+                    <tr>
+                        <td>Victorias:</td>
+                        <td id="victoriasMaquina"></td>
+                    </tr>
+                    <tr>
+                        <td>Derrotas:</td>
+                        <td id="derrotasMaquina"></td>
+                    </tr>
+                    <tr>
+                        <td>Empates:</td>
+                        <td id="empatesMaquina"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2 id="result">_</h2>
+
+            <div id="botonera">
+                <img id="piedra" src="img/piedra.png">
+                <img id="papel" src="img/papel.png">
+                <img id="tijeras" src="img/tijeras.png">
+            </div>
+        </div>
+    </body>
+</html>
